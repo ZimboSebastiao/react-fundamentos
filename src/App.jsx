@@ -1,12 +1,9 @@
-import Cabecalho from "./Cabecalho.jsx";
+import Cabecalho from "./Cabecalho";
 
 function App() {
   return (
     <>
-      {/* Comentário no meio do JS
-      É normal ficar entre {} nesta situação
-     */}
-
+      <Cabecalho />
       <main>
         <section>
           <h2>Conteúdo da aplicação</h2>
