@@ -1,3 +1,5 @@
+import Cabecalho from "./Cabecalho.jsx";
+
 function App() {
   return (
     <>
