@@ -15,7 +15,15 @@ function App() {
      */}
 
       <main>
-        <h2>Teste</h2>
+        <section>
+          <h2>Conteúdo da aplicação</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+            itaque minus atque odio quis quidem labore aliquam repellendus
+            architecto soluta temporibus error similique, rem cumque magnam
+            fugiat ducimus dignissimos animi.
+          </p>
+        </section>
       </main>
     </>
   );
