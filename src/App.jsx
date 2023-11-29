@@ -38,6 +38,10 @@ function App() {
           </article>
         </section>
       </main>
+
+      <footer>
+        <h2> Rodapé da aplicação</h2>
+      </footer>
     </>
   );
 }
