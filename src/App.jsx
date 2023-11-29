@@ -1,14 +1,13 @@
 import Cabecalho from "./Cabecalho";
 import Conteudo from "./Conteudo";
+import Rodape from "./Rodape";
 
 function App() {
   return (
     <>
       <Cabecalho />
       <Conteudo />
-      <footer>
-        <h2> Rodapé da aplicação</h2>
-      </footer>
+      <Rodape />
     </>
   );
 }
