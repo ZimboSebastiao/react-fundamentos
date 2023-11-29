@@ -1,1 +1,5 @@
-function Cabecalho(params) {}
+function Cabecalho() {
+    return (
+
+    );
+}
