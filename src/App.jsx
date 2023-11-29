@@ -1,6 +1,6 @@
-import Cabecalho from "./Cabecalho";
-import Conteudo from "./Conteudo";
-import Rodape from "./Rodape";
+import Cabecalho from "./components/Cabecalho";
+import Conteudo from "./components/Conteudo";
+import Rodape from "./components/Rodape";
 
 function App() {
   return (
