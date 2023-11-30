@@ -13,7 +13,10 @@ function Cabecalho() {
         </h1>
         <Menu />
       </header>
-      <p className={`${estilos["destaque-texto"]} centralizar`}>
+      <p
+        className={`${estilos["destaque-texto"]} centralizar`}
+        style={{ padding: "15px" }}
+      >
         Classes combinadas
       </p>
       <hr />

@@ -40,9 +40,11 @@ body {
 }
 
 header {
-  background-color: rgb(42, 201, 201);
+  background-color: rgb(25, 51, 170);
   display: flex;
   justify-content: space-between;
+  padding-bottom: 12px;
+  color: white;
 }
 
 .menu {
@@ -53,5 +55,6 @@ header {
 }
 
 a {
+  color: white;
   text-decoration: none;
 }

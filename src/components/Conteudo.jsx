@@ -3,8 +3,10 @@ import Artigo from "./Artigo";
 function Conteudo() {
   return (
     <main>
-      <section>
-        <h2>Conteúdo da aplicação</h2>
+      <section className="centralizar">
+        <h2 className="centralizar" style={{ paddingBottom: "15px" }}>
+          Conteúdo da aplicação
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
           itaque minus atque odio quis quidem labore aliquam repellendus
