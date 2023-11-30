@@ -6,3 +6,5 @@ function Artigo() {
     </article>
   );
 }
+
+export default Artigo;
