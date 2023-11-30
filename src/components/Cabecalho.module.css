@@ -1,0 +1,11 @@
+.sombra {
+  text-shadow: rgba(45, 10, 204, 0.452) 2px 2px 5px;
+}
+
+hr {
+  height: 4px;
+  border: none;
+  background-color: blue;
+  width: 50%;
+  margin: auto;
+}

@@ -1,12 +1,13 @@
 import Menu from "./Menu";
-// import "./Cabecalho.module.css";
-import "./Cabecalho.css";
+
+// importação do módulo CSS como um objeto chamado estilos (o nome)
+import estilos from "./Cabecalho.module.css";
 
 function Cabecalho() {
   return (
     <header>
-      <h1>
-        Olá <span className="sombra">React!</span> 😎
+      <h1 style={{ textAlign: "center" }}>
+        Olá <span className={estilos.sombra}>React!</span> 😎
       </h1>
       <hr />
       <Menu />
