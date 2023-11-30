@@ -12,6 +12,7 @@ function Conteudo() {
           ducimus dignissimos animi.
         </p>
       </section>
+      {/* Reaproveitamentos de Componentes */}
       <Artigo />
       <Artigo />
       <Artigo />
