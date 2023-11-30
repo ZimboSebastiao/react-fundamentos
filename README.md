@@ -33,5 +33,8 @@ index.html <- main.jsx <- App.jsx
 
 ## 04-estilos
 
-- Css in JS
-  - Css inline
+### Css in JS
+
+- Css inline: aplicado via atributo style da tag usando sintaxe JS, ou seja, objeto com propriedades.
+
+- Css externo/global
