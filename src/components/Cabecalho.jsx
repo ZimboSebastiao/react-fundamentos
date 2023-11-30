@@ -7,7 +7,8 @@ function Cabecalho() {
   return (
     <header>
       <h1 style={{ textAlign: "center" }}>
-        Olá <span className={estilos.sombra}>React!</span> 😎
+        <span className={estilos["destaque-texto"]}> Óla</span>
+        <span className={estilos.sombra}>React!</span> 😎
       </h1>
       <hr />
       <Menu />

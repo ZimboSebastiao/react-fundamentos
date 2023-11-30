@@ -28,3 +28,13 @@ body {
   box-shadow: red 0 0 10px;
   background-color: rgb(150, 150, 150);
 }
+
+.destaque-texto {
+  background-color: bisque;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.centralizar {
+  text-align: center;
+}

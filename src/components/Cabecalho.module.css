@@ -9,3 +9,7 @@ hr {
   width: 50%;
   margin: auto;
 }
+
+.destaque-texto {
+  text-transform: uppercase;
+}
