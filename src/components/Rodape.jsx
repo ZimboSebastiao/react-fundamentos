@@ -1,4 +1,5 @@
 function Rodape() {
+  // Css em uma constanste para melhor organização ou reaproveitamento
   const exemploEstilos = {
     backgroundColor: "lightcyan",
     padding: "3%",
