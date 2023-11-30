@@ -4,8 +4,8 @@ function Cabecalho() {
   return (
     <header>
       <h1>Olá React! 😎</h1>
-      <Menu />
       <hr />
+      <Menu />
     </header>
   );
 }
