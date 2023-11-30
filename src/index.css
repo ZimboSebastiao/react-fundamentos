@@ -23,3 +23,8 @@ p {
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.sombra {
+  box-shadow: red 0 0 10px;
+  background-color: rgb(206, 130, 130);
+}
