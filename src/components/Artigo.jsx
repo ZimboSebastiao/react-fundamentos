@@ -24,6 +24,9 @@ function Artigo(props) {
         {props.titulo}
       </h3>
       <p>{props.descricao}</p>
+      <p>
+        Lançamento: <time>{props.data}</time>
+      </p>
     </StyledArtigo>
   );
 }
