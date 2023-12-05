@@ -19,7 +19,10 @@ const StyledArtigo = styled.article`
 function Artigo(props) {
   return (
     <StyledArtigo>
-      <h3>{props.titulo}</h3>
+      <h3>
+        <span>{props.icone}</span>
+        {props.titulo}
+      </h3>
       <p>{props.descricao}</p>
     </StyledArtigo>
   );
