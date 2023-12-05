@@ -1,40 +1,46 @@
 # Fundamentos de React
 
-# Instruções VITE+REACT
+## 05-styled-components
 
-## Como criar um projeto React usando Vite
+Biblioteca (ou lib) muito comum para estilização CSS in JS de componentes.
 
-- npm create vite@latest
-- ... e siga as instruções:
-  - Instalar o pacote create-vite (y para sim)
-  - Dar nome ao projeto (meu-app ou outro qualquer)
-  - Escolher um framework/lib (escolha React)
-  - Escolher a linguagem (escolha JavaScript)
-  - Aguardar o término
-  - cd meu-app para entrar na pasta do projeto
-  - npm install
-  - npm run dev
+Para instalação, execute: `npm install styled-components`
 
-## Iniciar o servidor, dar suporte ao uso via Rede e abrir o navegador automaticamente
+Para utilização, crie componentes estilizados usando a sintaxe:
 
-`npm run dev -- --host 0.0.0.0 --open`
-
-## 00-projeto-resetado
-
-## Informações gerais
-
-A renderização ocorre na seguinte sequencia
-
-index.html <- main.jsx <- App.jsx
-
-- npm run dev -- --host 0.0.0.0 --open
+```javascript
+const StyledNome = styled.tag`
+  propriedadecss: valorDaPropriedade;
+  propriedadecss: valorDaPropriedade;
+`;
+```
 
 ---
 
+## Resumo/Revisão
+
+JSX -> HTML + JS para criar componentes
+
+- App.jsx (Componente PRINCIPAL)
+- main.jsx (Inicialização do React)
+- index.html (elemento raíz e chamada do script)
+
 ## 04-estilos
 
-### Css in JS
+### CSS in JS
 
-- Css inline: aplicado via atributo style da tag usando sintaxe JS, ou seja, objeto com propriedades.
+- CSS inline: aplicado via atributo style da tag usando sintaxe JS, ou seja, objeto com propriedades.
 
-- Css externo/global
+- CSS externo e global usando arquivo.css e importando no main.jsx
+
+- CSS Module: arquivo CSS especial relacionado ao componente que desejamos estilizar. Normalmente, nomeia-se o arquivo como "NomeComponente.module.css". A vantagem de usar CSS Modules é criar um escopo de estilização evitando conflitos de classes com mesmo nome.
+
+---
+
+## 00-projeto-resetado
+
+### Informações gerais
+
+A renderização ocorre na seguinte sequencia:
+
+index.html <- main.jsx <- App.jsx
