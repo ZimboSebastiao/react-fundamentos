@@ -50,21 +50,50 @@ function Conteudo() {
           titulo="Senhor dos Anéis"
           descricao="Livro criado por Tokien."
           data={datas[2]}
-        />
+        >
+          <h4>Volumes</h4>
+          <ul>
+            <li>A Sociedade do Anel</li>
+            <li>As Duas Torres</li>
+            <li>O Retorno do Rei</li>
+          </ul>
+        </Artigo>
+
         <Artigo
           imagem={imagem2}
           icone="👹"
           titulo="Game of Thrones"
           descricao="Aventura maluca, tem gente sempre morrendo."
           data={datas[1]}
-        />
+        >
+          <h4>Defuntos do livro</h4>
+          <ol>
+            <li>Aquele cara Stark</li>
+            <li>Outra pessoa Importante</li>
+            <li>Mais uma pessoa surpreendente</li>
+          </ol>
+        </Artigo>
+
         <Artigo
           imagem={imagem3}
           icone="🐱‍💻"
           titulo="HTML5 e CSS3"
           descricao="Fonte de estudos para quem quer começar no Front-End"
           data={datas[0]}
-        />
+        >
+          <section>
+            <h4>Assuntos</h4>
+            <details>
+              <summary>Estrutura</summary>
+              <p>HTML5 para estruturar e etc...</p>
+            </details>
+
+            <details>
+              <summary>Estilização</summary>
+              <p>CSS3 para formatar e etc...</p>
+            </details>
+          </section>
+        </Artigo>
       </div>
     </StyledConteudo>
   );
