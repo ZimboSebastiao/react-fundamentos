@@ -13,12 +13,20 @@ const StyledArtigo = styled.article`
   p {
     font-size: 1.1rem;
   }
+  .centralizar {
+    text-align: center;
+    padding: 4px;
+  }
 `;
 
 // Definindo props para o componente
 function Artigo(props) {
   return (
     <StyledArtigo>
+      <p className="centralizar">
+        {" "}
+        <img src={props.imagem} alt="" />{" "}
+      </p>
       <h3>
         <span>{props.icone}</span>
         {props.titulo}
