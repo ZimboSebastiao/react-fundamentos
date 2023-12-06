@@ -35,10 +35,18 @@ function Conteudo() {
     alert("Exemplo2");
   };
 
+  const exemplo3 = () => {
+    alert("Exemplo3");
+  };
+
   return (
     <StyledConteudo>
       <h2>Conteúdo da aplicação</h2>
       <button onClick={exemplo2}>Exemplo 2</button>
+      <br />
+      <button onClick={exemplo3}>
+        Exemplo 3 (Acionando o evento/ atráves do conteudo (pai))
+      </button>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
