@@ -13,11 +13,7 @@ function Artigo({ categoria, titulo, preco }) {
   const [cor, setCor] = useState("lavender");
 
   const mudarCor = () => {
-    if (cor == "lavender") {
-      setCor("pink");
-    } else {
-      setCor("lavender");
-    }
+    setCor(cor == "lavender" ? "pink" : "lavender");
   };
 
   return (
