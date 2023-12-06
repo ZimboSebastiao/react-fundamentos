@@ -1,5 +1,31 @@
 import styled from "styled-components";
 
+// Definindo props para o componente
+function Artigo({ categoria, titulo, preco, aoClicar }) {
+  const formatarPreco = (valor) => {
+    return valor.toLocaleString("pt-br", {
+      style: "currency",
+      currency: "BRL",
+    });
+  };
+  return (
+    <StyledArtigo>
+      {/* O Componente filho (Artigo) recebe através da prop 'aoClicar' a referência à função exemplo 3 existente no componente Pai (conteudo) */}
+      <div>
+        <h3 onClick={aoClicar}> {categoria}</h3>
+        <p>
+          <b>Curso: </b>
+          {titulo}
+        </p>
+        <p>
+          <b>Preço: </b>
+          {formatarPreco(preco)}
+        </p>
+      </div>
+    </StyledArtigo>
+  );
+}
+
 const StyledArtigo = styled.article`
   background-color: lavender;
   padding: 1rem;
@@ -18,30 +44,5 @@ const StyledArtigo = styled.article`
     padding: 4px;
   }
 `;
-
-// Definindo props para o componente
-function Artigo({ categoria, titulo, preco }) {
-  const formatarPreco = (valor) => {
-    return valor.toLocaleString("pt-br", {
-      style: "currency",
-      currency: "BRL",
-    });
-  };
-  return (
-    <StyledArtigo>
-      <div>
-        <h3>{categoria}</h3>
-        <p>
-          <b>Curso: </b>
-          {titulo}
-        </p>
-        <p>
-          <b>Preço: </b>
-          {formatarPreco(preco)}
-        </p>
-      </div>
-    </StyledArtigo>
-  );
-}
 
 export default Artigo;
