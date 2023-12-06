@@ -30,6 +30,7 @@ const StyledConteudo = styled.main`
   }
 `;
 function Conteudo() {
+  // Função que será chamada a partir do evento acionado por um componente/elemento.
   const exemplo2 = () => {
     alert("Exemplo2");
   };

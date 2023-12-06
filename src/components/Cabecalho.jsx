@@ -4,6 +4,7 @@ import styled from "styled-components";
 function Cabecalho() {
   return (
     <StyledCabecalho>
+      {/* Propriedade de evento que executará, após o clique, uma função intermediária que fará ações (chamar outras funcções, executar outros processos etc) */}
       <h1
         style={{ cursor: "pointer" }}
         onClick={() => {
