@@ -30,9 +30,14 @@ const StyledConteudo = styled.main`
   }
 `;
 function Conteudo() {
+  const exemplo2 = () => {
+    alert("Exemplo2");
+  };
+
   return (
     <StyledConteudo>
       <h2>Conteúdo da aplicação</h2>
+      <button onClick={exemplo2}>Exemplo 2</button>
 
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
