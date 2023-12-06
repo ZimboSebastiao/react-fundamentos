@@ -1,8 +1,28 @@
 /* Cabecalho.jsx */
+import { useState } from "react";
 import Menu from "./Menu";
 
 /* Importação da lib Styled Components */
 import styled from "styled-components";
+
+function Cabecalho() {
+  // Usando gerenciador de states: Aquidefinimos a chamada de uma função especial do React: 'useState'. Esta e outras funções iniciais com o prefixo 'use' são conhecidas como React Hooks.
+
+  // No caso do useState, usando desestruturação, criamos uma variável que representa o valor do state (titulo) e uma função responsável por atualizar o state (setTitulo)
+  const [titulo, seTitulo] = useState("Olá React! 😎");
+
+  const mudarTitulo = () => {
+    seTitulo("Oie! 😉");
+  };
+
+  return (
+    <StyledCabecalho>
+      <h1 onClick={mudarTitulo}>{titulo}</h1>
+      <hr />
+      <Menu />
+    </StyledCabecalho>
+  );
+}
 
 const StyledCabecalho = styled.header`
   background-color: black;
@@ -19,15 +39,5 @@ const StyledCabecalho = styled.header`
     margin: 8px auto;
   }
 `;
-
-function Cabecalho() {
-  return (
-    <StyledCabecalho>
-      <h1>Olá React! 😎</h1>
-      <hr />
-      <Menu />
-    </StyledCabecalho>
-  );
-}
 
 export default Cabecalho;
