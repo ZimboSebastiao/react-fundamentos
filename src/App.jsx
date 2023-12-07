@@ -5,16 +5,22 @@ import Produtos from "./pages/Produtos";
 import Contato from "./pages/Contato";
 import Container from "./components/Container";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
     <>
-      <Cabecalho />
-      <Container>
-        <Home />
-        <Produtos />
-        <Contato />
-      </Container>
-      <Rodape />
+      <BrowserRouter>
+        <Cabecalho />
+        <Container>
+          <Routes>
+            <Route Component={Home} exact path="/" />
+            <Route Component={Produtos} path="/produtos" />
+            <Route Component={Contato} path="/contato" />
+          </Routes>
+        </Container>
+        <Rodape />
+      </BrowserRouter>
     </>
   );
 }
