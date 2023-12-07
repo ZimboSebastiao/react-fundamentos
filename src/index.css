@@ -1,0 +1,40 @@
+/* Folha de Estilo GLOBAL
+será usada por elementos em todos os componentes da aplicação React
+ */
+
+html {
+  font-size: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sombra {
+  box-shadow: red 0 0 10px;
+  background-color: rgb(150, 150, 150);
+}
+
+.destaque-texto {
+  background-color: bisque;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.centralizar {
+  text-align: center;
+}
