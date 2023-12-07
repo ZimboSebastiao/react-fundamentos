@@ -1,5 +1,14 @@
 # Fundamentos de React
 
+## 11-navegacao-usando-rotas
+
+O React suporta a navegação/links como Single Page Application (SPA)
+
+usando uma biblioteca adicional chamada **React Router DOM**
+`npm install react-router-dom`
+
+---
+
 ## 09-gerenciamento-de-estados-dos-componentes
 
 `Estado` ou `State` é uma propriedade especial de um componente que pode ser alterado ao longo do tempo. Por exemplo, um componente que exibe um contador de **likes** precisa de um gerenciamento de `states` para controlar a quantidade de **likes** recebidos.
