@@ -35,9 +35,17 @@ function Conteudo() {
           <button onClick={aplicarFiltro}>Back-End</button>
           <button onClick={aplicarFiltro}>Design</button>
         </p>
-        <p>
+        {/* <p>
           Você escolheu: <b>{categoria}</b>
-        </p>
+        </p> */}
+
+        {/* Renderização Condicional
+          O texto/tag/componente somente será renderizado/exibido se o state categoria existir (ou seja, não é null, undefind, false) */}
+        {categoria && (
+          <p>
+            Você escolheu: <b>{categoria}</b>
+          </p>
+        )}
       </div>
 
       <div className="artigos">
