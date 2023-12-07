@@ -15,12 +15,15 @@ function Conteudo() {
 
     // E em seguida passamos este texto para o state de categoria
     setCategoria(categoriaEscolhida);
-    // setCategoria(categoriaEscolhida === "Limpar" ? null : categoriaEscolhida);
-    if (categoriaEscolhida === "Limpar") {
-      setCategoria(null);
-    } else {
-      setCategoria(categoriaEscolhida);
-    }
+    // setCategoria(categoriaEscolhida === "Limpar filtro" ? null : categoriaEscolhida);
+    // if (categoriaEscolhida === "Limpar") {
+    //   setCategoria(null);
+    // } else {
+    //   setCategoria(categoriaEscolhida);
+    // }
+  };
+  const limparFiltro = () => {
+    setCategoria(null);
   };
 
   /* Gerando um novo array de cursos filtrados */
@@ -50,7 +53,12 @@ function Conteudo() {
           <button onClick={aplicarFiltro}>Front-End</button>
           <button onClick={aplicarFiltro}>Back-End</button>
           <button onClick={aplicarFiltro}>Design</button>
-          <button onClick={aplicarFiltro}>Limpar {setCategoria == null}</button>
+          <button onClick={aplicarFiltro}>Mobile</button>
+          <button onClick={aplicarFiltro}>Música</button>
+          <button onClick={aplicarFiltro}>Gastronomia</button>
+          {categoria && (
+            <button onClick={limparFiltro}> 🧹 Limpar filtro </button>
+          )}
         </p>
 
         {/* Renderização Condicional
