@@ -36,6 +36,9 @@ function Conteudo() {
     return curso.categoria === categoria || categoria === null;
   });
 
+  // Guardando a quantidade de cursos filtrados
+  const quantidade = cursosFiltrados.length;
+
   return (
     <StyledConteudo>
       <h2>Conteúdo da aplicação</h2>
@@ -60,6 +63,9 @@ function Conteudo() {
             <button onClick={limparFiltro}> 🧹 Limpar filtro </button>
           )}
         </p>
+        <p>
+          Quantidade de cursos: <b>{quantidade}</b>
+        </p>
 
         {/* Renderização Condicional
         O texto/tag/componente somente será renderizado/exibido
@@ -69,6 +75,11 @@ function Conteudo() {
         {categoria && (
           <p>
             Você escolheu: <b>{categoria}</b>
+          </p>
+        )}
+        {quantidade == 0 && (
+          <p style={{ color: "red", textAlign: "center" }}>
+            Não há cursos desta categoria!
           </p>
         )}
       </div>
