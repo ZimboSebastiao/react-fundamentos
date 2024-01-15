@@ -6,6 +6,15 @@ function Produtos() {
 
   // Gerenciando efeito colateral dp componente para o carregamento dos da api
 
+  /*
+  Fluxo geral de funcionamento do código abaixo:
+
+  1) useEffect é carregado UMA VEZ e APÓS  a montagem do page (Produtos)
+  Obs: 0 [] indica que o useEffect não tem dependências adicionais e que será executado somente UMA VEZ.
+  2) Em seguida, ele executa a funçao carregarDados
+  3) Ao término dela, atualiza o state (produtos)
+  */
+
   useEffect(() => {
     const carregarDados = async () => {
       try {
