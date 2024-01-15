@@ -4,6 +4,9 @@ function Produtos() {
   // O state "produtos" é iniciado como um array vazio. Posteriormente (após o carregamento dos dados da api) ele será preenchido com os objetos/produtos.
   const [produtos, setProdutos] = useState([]);
 
+  // State de loading (por padrão, inicia ativado/true)
+  const [loading, setLoading] = useState(true);
+
   // Gerenciando efeito colateral dp componente para o carregamento dos da api
 
   /*
@@ -22,6 +25,7 @@ function Produtos() {
         const dados = await resposta.json();
         console.log(dados);
         setProdutos(dados);
+        setLoading(false);
       } catch (error) {
         console.error("Houve um erro: " + error);
       }
@@ -33,17 +37,27 @@ function Produtos() {
   return (
     <article>
       <h2>Produtos</h2>
-      {produtos.map((produto) => {
-        return (
-          <section key={produto.id}>
-            <h3>{produto.title}</h3>
-            <p>{produto.price}</p>
-            <p>{produto.description}</p>
-            <p>{produto.category}</p>
-            <p>{produto.image}</p>
-          </section>
-        );
-      })}
+      {loading ? (
+        <p>Carregando...</p>
+      ) : (
+        produtos.map((produto) => {
+          return (
+            <section key={produto.id}>
+              <h3>{produto.title}</h3>
+              <p>Preço: {produto.price}</p>
+              <p>Descrição: {produto.description}</p>
+              <p>Categoria: {produto.category}</p>
+              <p>
+                <img
+                  src={produto.image}
+                  alt={produto.title}
+                  style={{ width: "20%" }}
+                />
+              </p>
+            </section>
+          );
+        })
+      )}
     </article>
   );
 }
