@@ -30,7 +30,22 @@ function Produtos() {
     carregarDados();
   }, []);
 
-  return <h2>Produtos</h2>;
+  return (
+    <article>
+      <h2>Produtos</h2>
+      {produtos.map((produto) => {
+        return (
+          <section key={produto.id}>
+            <h3>{produto.title}</h3>
+            <p>{produto.price}</p>
+            <p>{produto.description}</p>
+            <p>{produto.category}</p>
+            <p>{produto.image}</p>
+          </section>
+        );
+      })}
+    </article>
+  );
 }
 
 export default Produtos;
