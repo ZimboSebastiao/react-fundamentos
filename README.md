@@ -1,5 +1,11 @@
 # Fundamentos de React
 
+## 12-Gerenciamentos-de-efeitos-colaterais
+
+`Efeitos Colaterais` no React são operações que não tem ligação direita com a renderizção do componente, como por exemplo, solicitações de API e manipulação de eventos.
+
+Usamos o **hook** `useEffect` para garantir que esses efeitos colaterais ocorram no momemnto adequado do ciclo de vida do componente, evitando execuções repetitivas e problemas de carregamento e desempenho.
+
 ## 11-navegacao-usando-rotas
 
 O React suporta a navegação/links como Single Page Application (SPA)
