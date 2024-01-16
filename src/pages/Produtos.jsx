@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import imagemLoading from "../assets/loading.svg";
+import { Link } from "react-router-dom";
 
 function Produtos() {
   // O state "produtos" é iniciado como um array vazio. Posteriormente (após o carregamento dos dados da api) ele será preenchido com os objetos/produtos.
@@ -56,6 +57,9 @@ function Produtos() {
                   alt={produto.title}
                   style={{ width: "20%" }}
                 />
+              </p>
+              <p>
+                <Link to={`/produtos/${produto.id}`}>Ver detalhes</Link>
               </p>
             </section>
           );
