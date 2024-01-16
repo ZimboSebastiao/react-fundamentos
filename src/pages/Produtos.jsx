@@ -23,7 +23,7 @@ function Produtos() {
   useEffect(() => {
     const carregarDados = async () => {
       try {
-        const resposta = await fetch(`https://fakestoreapi.com/products`);
+        const resposta = await fetch(`https://fakestoreapi.com/products/`);
         const dados = await resposta.json();
         console.log(dados);
         setProdutos(dados);
